@@ -57,17 +57,20 @@ print(f"Second Largest: {second_largest}")
 
 ```python
 
-# remove duplicate from the sorted list
-
 l = [1,1,2,2,2,3,4,4,5]
-dup = None
-i = 0
-while i < len(l) :
-    if dup == l[i] :
-        l.pop(l[i])
-    else :
-        dup = l[i]
-        i += 1
+
+if not l:
+    print(l)
+else:
+    j = 1  # position to place next unique element
+
+    for i in range(1, len(l)):
+        if l[i] != l[j-1]:
+            l[j] = l[i]
+            j += 1
+
+    l = l[:j]  # keep only unique elements
 
 print(l)
+
 ```
