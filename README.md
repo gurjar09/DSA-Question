@@ -1,5 +1,6 @@
-# Move all zero at the End
+# 1. Move all zero at the End
 
+```python
 l = [1,0,2,0,3,0,5]
 
 pos = 0
