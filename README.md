@@ -74,3 +74,20 @@ else:
 print(l)
 
 ```
+
+---
+
+# 4. Find the Missing Number
+
+---
+```python
+l = [1, 2, 3, 5, 6]
+
+missing_value = len(l) + 1
+
+for i, value in enumerate(l) :
+    if value != i + 1:
+        missing_value = i + 1
+        break
+print(missing_value)
+```
