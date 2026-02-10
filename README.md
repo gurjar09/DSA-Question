@@ -13,22 +13,8 @@ for i in range(len(l)) :
 print(l)
 
 
-# Second Largest Element
+#2. Second Largest Element
 
-This repository contains an efficient solution to find the **first** and **second** largest elements in a list using a single-pass approach.
-
----
-
-## 💡 Logic Explanation
-The algorithm iterates through the list once ($O(n)$ time complexity). It maintains two variables:
-1.  **`first_largest`**: Tracks the highest value found so far.
-2.  **`second_largest`**: Tracks the runner-up value (ensuring it is not equal to the first).
-
-
-
----
-
-## 🚀 Implementation
 
 ```python
 # Input list
