@@ -48,3 +48,26 @@ for num in l:
 print(f"First Largest: {first_largest}")
 print(f"Second Largest: {second_largest}")
 ```
+
+---
+
+## 3. Remove duplicate from the sorted list/array.
+
+---
+
+```python
+
+# remove duplicate from the sorted list
+
+l = [1,1,2,2,2,3,4,4,5]
+dup = None
+i = 0
+while i < len(l) :
+    if dup == l[i] :
+        l.pop(l[i])
+    else :
+        dup = l[i]
+        i += 1
+
+print(l)
+```
